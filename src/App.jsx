@@ -8,11 +8,11 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: '/InnobotHealthFE',
+    path: '/',
     element: <div><Login /> </div>
   },
   {
-    path: '/InnobotHealthFE/register',
+    path: '/register',
     element: <div><Register /> </div>
   }
 
