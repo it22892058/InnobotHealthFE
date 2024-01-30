@@ -18,7 +18,7 @@ const Register = () => {
       <div className="container flex">
         
         <div className="videoDiv">
-          <video src={video} autoPlay muted loop></video>
+          <video autoPlay muted src={video} ></video>
 
           <div className="textDiv">
           </div>
@@ -32,7 +32,7 @@ const Register = () => {
   
         <div className="formDiv flex">
           <div className="headerDiv">
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='logo' className='mx-auto' />
             <h3>Let Us Know You</h3>
           </div>
 

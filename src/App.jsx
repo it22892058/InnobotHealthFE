@@ -1,6 +1,8 @@
 import './App.css'
 import Login from './Components/Login/Login'
 import Register from './Components/Register/Register'
+import Verify from './Components/Verify/Verify' 
+import Password  from './Components/Password/Password'
 import {
   createBrowserRouter,
   RouterProvider
@@ -14,7 +16,16 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <div><Register /> </div>
-  }
+  } ,
+  {
+    path: '/Verify',
+    element: <div><Verify /> </div>
+  } ,
+  {
+    path: '/password',
+    element: <div><Password /> </div>
+  } 
+ 
 
 ])
 

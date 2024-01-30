@@ -16,7 +16,7 @@ const Login = () => {
       <div className="container flex">
         
         <div className="videoDiv">
-          <video src={video} autoPlay muted loop></video>
+          <video autoPlay muted  src={video} ></video>
 
           <div className="textDiv">
           </div>
@@ -30,7 +30,7 @@ const Login = () => {
   
         <div className="formDiv flex">
           <div className="headerDiv">
-            <img src={logo} alt='logo' />
+           <img src={logo} alt='logo'className='mx-auto' />
             <h3>Welcome Back!</h3>
           </div>
 
@@ -55,9 +55,13 @@ const Login = () => {
               <AiOutlineSwapRight className='icon' />
             </button>
 
+            <Link to={'/Verify'}>
             <span className='forgotPassword'>
               Forgot your Password? <a href=''>Click Here</a>
             </span>
+            </Link> 
+            
+           
 
           </form>
         </div>
@@ -67,4 +71,6 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login 
+
+// autoPlay muted loop this video loop
