@@ -16,7 +16,7 @@ const Login = () => {
       <div className="container flex">
         
         <div className="videoDiv">
-          <video src={video} autoPlay muted loop></video>
+          <video src={video} ></video>
 
           <div className="textDiv">
           </div>
@@ -30,7 +30,7 @@ const Login = () => {
   
         <div className="formDiv flex">
           <div className="headerDiv">
-            <img src={logo} alt='logo' />
+           <img src={logo} alt='logo'className='mx-auto' />
             <h3>Welcome Back!</h3>
           </div>
 
@@ -71,4 +71,6 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login 
+
+// autoPlay muted loop this video loop
