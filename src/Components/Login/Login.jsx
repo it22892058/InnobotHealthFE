@@ -16,7 +16,7 @@ const Login = () => {
       <div className="container flex">
         
         <div className="videoDiv">
-          <video src={video} ></video>
+          <video autoPlay muted  src={video} ></video>
 
           <div className="textDiv">
           </div>
