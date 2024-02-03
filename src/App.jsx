@@ -3,6 +3,8 @@ import Login from './Components/Login/Login'
 import Register from './Components/Register/Register'
 import Verify from './Components/Verify/Verify' 
 import Password  from './Components/Password/Password'
+import Dashboard from './Components/common/common'
+
 import {
   createBrowserRouter,
   RouterProvider
@@ -24,7 +26,12 @@ const router = createBrowserRouter([
   {
     path: '/password',
     element: <div><Password /> </div>
-  } 
+  },
+  {
+    path: '/dashboard',
+    element: <div><Dashboard /> </div>
+  },
+
  
 
 ])

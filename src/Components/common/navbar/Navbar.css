@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #e8e8e8;
+   margin-right: 30px;
+  }
+  
+  .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+  }
+  /* Navbar.css */
+
+
+/* Enlarge the FaBell and FaSignOutAlt icons */
+.navbar-item .fa-bell,
+.navbar-item .fa-sign-out-alt {
+  font-size: 30px; /* Adjust the icon size as needed */
+  color: #03989e; 
+}
+.navbar_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+  
+}
