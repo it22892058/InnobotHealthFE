@@ -196,7 +196,7 @@ html {
         flex-basis: 50%;
         margin: auto;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         transform: translateY(-1rem);
 
         .headerDiv{
@@ -231,6 +231,7 @@ html {
               outline: none;
               border: none;
               width: 200px;
+              height: auto;
           
              }
 

@@ -7,7 +7,7 @@ import { FaUserShield } from 'react-icons/fa';
 import { BsFillShieldLockFill } from 'react-icons/bs';
 import { AiOutlineSwapRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-
+import { FaPhone } from "react-icons/fa";
 
 
 const Login = () => {
@@ -49,7 +49,8 @@ const Login = () => {
                 <BsFillShieldLockFill className='icon' />
                 <input type='password' id='Password' placeholder='Enter Password' />
               </div>
-            </div>
+            </div> 
+            <br/>
             <button type='submit' className='btn flex'>
               <span>Login</span>
               <AiOutlineSwapRight className='icon' />
