@@ -5,7 +5,7 @@ const common = () => {
     return (
         <div>
             <Header />
-            <Navbar />
+           
         </div>
     );
 };
