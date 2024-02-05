@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import Otp from './Components/Verify/Otp'
 
 const router = createBrowserRouter([
   {
@@ -24,9 +25,12 @@ const router = createBrowserRouter([
   {
     path: '/password',
     element: <div><Password /> </div>
-  } 
+  } ,
+  {
+    path: '/otp',
+    element: <div><Otp /> </div>
+  }
  
-
 ])
 
 function App() {

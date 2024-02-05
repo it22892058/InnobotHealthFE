@@ -33,23 +33,23 @@ const Register = () => {
     const errors = {};
 
     if (!formFields.Fname.trim()) {
-      
+
     }
 
     if (!formFields.Lname.trim()) {
-      
+
     }
 
     if (!formFields.email.trim() || !emailRegex.test(formFields.email)) {
-     
+
     }
 
     if (!formFields.Password.trim() || !passwordRegex.test(formFields.Password)) {
-      
+
     }
 
     if (!formFields.phone.trim() || !phoneRegex.test(formFields.phone)) {
-      
+
     }
 
     setFormErrors(errors);
@@ -165,21 +165,6 @@ const Register = () => {
                 {formErrors.Password && <span className='error'>{formErrors.Password}</span>}
               </div>
             </div>
-            <div className='inputDiv'>
-              <div className='input flex'>
-                <FaPhone className='icon' />
-                <input
-                  type='text'
-                  id='phone'
-                  placeholder='Enter Mobile phone'
-                  value={formFields.phone}
-                  onChange={handleInputChange}
-                />
-                {formErrors.phone && <span className='error'>{formErrors.phone}</span>}
-              </div>
-            </div>
-
-            {/* Updated error display */}
             <div className='errorDiv'>
               {Object.keys(formErrors).map((key) => (
                 <span key={key} className='error'>
@@ -187,11 +172,13 @@ const Register = () => {
                 </span>
               ))}
             </div>
+            <Link to={'/Verify'}>
+              <button type='submit' className='btn flex'>
+                <span>Register</span>
+                <AiOutlineSwapRight className='icon' />
+              </button>
+            </Link>
 
-            <button type='submit' className='btn flex'>
-              <span>Register</span>
-              <AiOutlineSwapRight className='icon' />
-            </button>
           </form>
         </div>
       </div>
