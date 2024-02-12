@@ -1,12 +1,13 @@
 import React from 'react';
-import { FaBell, FaSignOutAlt} from 'react-icons/fa';
+import { FaBell, FaSignOutAlt,FaHome } from 'react-icons/fa';
 import './Navbar.css';
-
+import { IoPersonOutline } from "react-icons/io5";
 function Navbar() {
   return (
     <section className="navbar">
        
-      <a href="/" className="navbar_item">Home</a>
+      <a href="/" className="navbar-item">
+        <FaHome className="fa-bell"  /></a>
      
       
       <a href="/notifi" className="navbar-item">
@@ -16,6 +17,12 @@ function Navbar() {
         <FaSignOutAlt className="fa-sign-out-alt" /> {/* Apply the CSS class for FaSignOutAlt icon */}
         
       </a>
+      <a href="/singout" className="navbar-item">
+              <div className="profile-icon-container">
+            <IoPersonOutline className="fa-sign-out-alt" />
+              </div>
+      </a>
+
     </section>
   );
 }

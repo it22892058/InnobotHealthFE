@@ -23,6 +23,7 @@
 .navbar-item .fa-sign-out-alt {
   font-size: 30px; /* Adjust the icon size as needed */
   color: #03989e; 
+ 
 }
 .navbar_item {
   display: flex;
@@ -35,6 +36,30 @@
   outline: none;
   
 }
+.profile-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon-container::before {
+  content: "";
+  position: absolute;
+  width: 36px; /* Adjust the size of the circle as needed */
+  height: 36px; /* Adjust the size of the circle as needed */
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Set a negative z-index to place it behind the icon */
+}
+
+.profile-icon-container svg {
+  position: relative;
+  z-index: 1; /* Set a higher z-index to place it above the circle */
+}
+
+
 
 
 

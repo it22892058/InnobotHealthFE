@@ -98,4 +98,34 @@
     background-image: url(/src/components/common/header/logo.png);
     
   }
+  /* ... existing styles ... */
+
+.flex {
+  position: relative;
   
+
+}
+
+.flex .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff; /* Set your background color */
+  border: 1px solid #ddd; /* Set your border style */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Set your shadow style */
+  min-width: 150px; /* Set your preferred width */
+  padding: 10px;
+  display: none;
+  margin-top: 360px;
+  
+
+}
+
+.flex .submenu.open {
+  display: block;
+}
+.flex .submenu li:hover {
+  background-color: #e5e5e5; /* Set your hover background color */
+}
+/* ... existing styles ... */
+

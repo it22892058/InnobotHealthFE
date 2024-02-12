@@ -10,22 +10,40 @@ import { AiFillEnvironment, AiOutlineBarChart, AiOutlineFileText, AiOutlineSetti
 import { MdPeople } from "react-icons/md";
 import {RiDashboardFill} from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { BsChevronRight } from "react-icons/bs";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { GrFavorite } from "react-icons/gr";
 console.log(logo);
 function Header (){
-  const[open,setOpen]= useState(true);
+  const[open,setOpen]= useState(false);
   const[submenuOpen,setSubmenuOpen]= useState(false);
+
+  const handleNavbarToggle = () => {
+    setOpen(!open);
+    // Close submenu when toggling the navbar
+    setSubmenuOpen(false);
+  };
+
+
+
+  
+  
   const Menus=[
-    {title:"Dashboard"},
+    {title:"Favorites",icon:<GrFavorite />},
+    {title:"Menu"},
     {title:"People",icon: <MdPeople/>},
     {title:"Media",spacing:true,icon:<FaInstagram />},
-    {title:"Projects",icon:<BsReverseLayoutTextSidebarReverse/>,
+    {title:"Documents",icon:<BsReverseLayoutTextSidebarReverse/>,
      submenu:true,
      submenuItems:[
-      {title:"submenu "},
+      {title:"submenu 1       "},
+      {title:"submenu 2       "},
+      {title:"submenu 3       "},
+      {title:"submenu 4 "},
      ],
     },
-    {title: "Pages",icon:<AiOutlineFileText/>},
-    {title: "Inbox",icon:<FaInbox />},
+    {title: "Billing",icon:<FaMoneyBillTransfer />},
+    {title: "Analytics",icon:<FaInbox />},
     {title: "Settings",icon:<AiOutlineSetting/>},
   ];
     return(
@@ -52,15 +70,16 @@ function Header (){
       </section>
       
         <div className="flex">
-          <div className={`bg-dark-purple h-screen p-5 pt-8 ${open ? "w-72" : "w-20"} duration-300 relative`}>
-          <BsArrowLeftShort
-  className={`bg-amber text-03989e text-3xl rounded-full absolute -right-3 top-9 border border-dark-purple cursor-pointer
-    ${!open && "rotate-180"}`}
-  onClick={() => setOpen(!open)}
-/>
+          <div className={`bg-dark-purple h-screen p-5 pt-8 ${open ? "w-100" : "w-20"} duration-300 relative rounded-right`}>
+        
+    <BsArrowLeftShort
+      className={`bg-amber text-03989e text-3xl rounded-full absolute -right-3 top-9 border border-dark-purple cursor-pointer
+        ${!open && "rotate-180"}`}
+      onClick={handleNavbarToggle}
+    />
         
          <div className="inline-flex">
-         <RxHamburgerMenu  className={`bg-amber text-4xl rounded cursor-pointer float-left mr-2 duration-500 ${open && "rotate-[360deg]"}`}/>
+         {/* <RxHamburgerMenu  className={`bg-amber text-4xl rounded cursor-pointer float-left mr-2 duration-500 ${open && "rotate-[360deg]"}`}/> */}
 
          
          </div>
@@ -80,21 +99,25 @@ function Header (){
                   {menu.title}
                   </span>
                   {menu.submenu && open && (
-                    <BsChevronDown className={` ${submenuOpen && "rotate-180"}`} onClick={()=>
+                    <BsChevronRight  className={` ${submenuOpen && "rotate-180"}`} onClick={()=>
                        setSubmenuOpen(!submenuOpen)
                       }/>
                   )}
               </li>
-              {menu.submenu && submenuOpen && open &&(
-                <ul>
-                  {menu.submenuItems.map((submenuItem,index)=>(
-                    <li key={index} className="text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-light-white rounded-md">
-                      {submenuItem.title}
-                    </li>
-                  )
-                  )}
-                </ul>
-              )}
+              
+              
+              
+              {menu.submenu && submenuOpen && open && (
+  <ul className={`submenu ${submenuOpen ? 'open' : ''}`}>
+    {menu.submenuItems.map((submenuItem, index) => (
+      <li key={index} className="text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 pl-5 pr-2 hover:bg-light-white rounded-md">
+      {submenuItem.title}
+    </li>
+    ))}
+  </ul>
+)}
+
+              
               </>
           ))}
         </ul>
@@ -104,8 +127,18 @@ function Header (){
 
         </div>
         
+
+
+
+
+
+
+
+
+        
         </section>
        
     )
 }
+
 export default Header;
