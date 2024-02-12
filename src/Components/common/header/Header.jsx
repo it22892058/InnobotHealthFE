@@ -68,7 +68,14 @@ function Header (){
          
         </section>
       </section>
-      
+      <div className="thisfill">
+              <div className="firsticon">
+                <input type="checkbox" style={{ marginBottom:'5px', marginLeft:'15px' ,marginTop: '8px'}}>
+
+                </input>
+                </div><div className="secondicon"></div><div className="thirdicon">
+              </div><div className="fourthicon"></div><div className="fifthicon"></div>
+      </div>
         <div className="flex">
           <div className={`bg-dark-purple h-screen p-5 pt-8 ${open ? "w-100" : "w-20"} duration-300 relative rounded-right`}>
         
@@ -91,7 +98,7 @@ function Header (){
         <ul className="pt-2">
           {Menus.map((menu,index)=>(
               <>
-              <li key={index} className={`text-black text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menu.spacing ? "mt-9" : "mt-4"} `}>
+              <li key={index} className={`text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menu.spacing ? "mt-9" : "mt-4"} `}>
                <span className="text-2xl block float-left">
                 {menu.icon ? menu.icon : <RiDashboardFill/>}
                </span>

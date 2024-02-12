@@ -7,9 +7,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        "dark-purple": "#e8e8e8",
-        'light-white':'rgba(255,255,255,0.69)',
+        "dark-purple": "#02072D",
+        'light-white':'rgba(255,255,255,0.4)',
         "amber":"#03989e",
+       
         
       },
       width:{
@@ -20,7 +21,7 @@ export default {
         '8': '2rem',
       },
       borderRadius: {
-        'right': '0 0.95rem 0 0' // Border-radius for right corners
+        'right': '0 1.95rem 2.95rem 0' // Border-radius for right corners
       },
       
     },
