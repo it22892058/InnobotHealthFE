@@ -4,15 +4,17 @@ import { Navbar } from '../../common';
 import logo from './logo.png'
 import Search from '../search/Search';
 import './Header.css';
-import { FaInstagram, FaInbox } from "react-icons/fa";
+import { FaInbox } from "react-icons/fa";
+import { MdSwapHoriz } from 'react-icons/md';
 import { BsArrowLeftShort, BsSearch,BsChevronDown, BsReverseLayoutTextSidebarReverse} from 'react-icons/bs';
 import { AiFillEnvironment, AiOutlineBarChart, AiOutlineFileText, AiOutlineSetting } from 'react-icons/ai';
 import { MdPeople } from "react-icons/md";
 import {RiDashboardFill} from "react-icons/ri";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { BsHospitalFill } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
+import { FaChartBar } from 'react-icons/fa';
 console.log(logo);
 function Header (){
   const[open,setOpen]= useState(false);
@@ -31,8 +33,8 @@ function Header (){
   const Menus=[
     {title:"Favorites",icon:<GrFavorite />},
     {title:"Menu"},
-    {title:"People",icon: <MdPeople/>},
-    {title:"Media",spacing:true,icon:<FaInstagram />},
+    {title:"Practice",icon: <BsHospitalFill />},
+    {title:"Referrals",spacing:true,icon:<MdSwapHoriz size={30}/>},
     {title:"Documents",icon:<BsReverseLayoutTextSidebarReverse/>,
      submenu:true,
      submenuItems:[
@@ -43,8 +45,10 @@ function Header (){
      ],
     },
     {title: "Billing",icon:<FaMoneyBillTransfer />},
-    {title: "Analytics",icon:<FaInbox />},
+    {title: "Messages",icon:<FaInbox />},
+    {title: "Analytics",icon:<FaChartBar /> },
     {title: "Settings",icon:<AiOutlineSetting/>},
+    
   ];
     return(
         <section className="header">
@@ -76,7 +80,9 @@ function Header (){
                 </div><div className="secondicon"></div><div className="thirdicon">
               </div><div className="fourthicon"></div><div className="fifthicon"></div>
       </div>
+      <section>
         <div className="flex">
+        
           <div className={`bg-dark-purple h-screen p-5 pt-8 ${open ? "w-100" : "w-20"} duration-300 relative rounded-right`}>
         
     <BsArrowLeftShort
@@ -131,19 +137,68 @@ function Header (){
 
 
           </div>
-
+<div className="tablealtering">
+  
+{/* 
+<table style={{ borderCollapse: 'collapse', width: '100%', border: '1px solid black' }} className="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email Address</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Select</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>Additional Column 1</td>
+      <td>Additional Column 2</td>
+      <td><input type="checkbox" /></td>
+      <td>Additional Column 4</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>Additional Column 1</td>
+      <td>Additional Column 2</td>
+      <td><input type="checkbox" /></td>
+      <td>Additional Column 4</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Larry the Bird</td>
+      <td>Thornton</td>
+      <td>@twitter</td>
+      <td>Additional Column 1</td>
+      <td>Additional Column 2</td>
+      <td><input type="checkbox" /></td>
+      <td>Additional Column 4</td>
+    </tr>
+  </tbody>
+</table>
+*/}
+</div>
         </div>
-        
-
-
-
-
+       
+        </section>
 
 
 
 
         
         </section>
+        
+        
        
     )
 }
