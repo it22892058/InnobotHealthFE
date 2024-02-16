@@ -7,8 +7,12 @@ import { FaUserShield } from 'react-icons/fa';
 import { BsFillShieldLockFill } from 'react-icons/bs';
 import { AiOutlineSwapRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import {getAnalytics, logEvent} from "firebase/analytics";
+import {app} from '../../../firebase.js';
 
+const analytics = getAnalytics(app);
 
+logEvent(analytics,'test_event', { date : Date.now(), platform : "Innobot-FE-SLIIT"});
 
 const Login = () => {
   return (
