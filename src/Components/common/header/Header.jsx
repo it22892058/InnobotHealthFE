@@ -6,13 +6,12 @@ import Search from '../search/Search';
 import './Header.css';
 import { FaInbox } from "react-icons/fa";
 import { MdSwapHoriz } from 'react-icons/md';
-import { BsArrowLeftShort, BsSearch,BsChevronDown, BsReverseLayoutTextSidebarReverse} from 'react-icons/bs';
-import { AiFillEnvironment, AiOutlineBarChart, AiOutlineFileText, AiOutlineSetting } from 'react-icons/ai';
-import { MdPeople } from "react-icons/md";
+import { BsArrowLeftShort, BsSearch,BsReverseLayoutTextSidebarReverse} from 'react-icons/bs';
+import {AiOutlineSetting } from 'react-icons/ai';
 import {RiDashboardFill} from "react-icons/ri";
 import { BsHospitalFill } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaMoneyBillTransfer,FaRegCalendarDays } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
 import { FaChartBar } from 'react-icons/fa';
 console.log(logo);
@@ -34,6 +33,7 @@ function Header (){
     {title:"Favorites",icon:<GrFavorite />},
     {title:"Menu"},
     {title:"Practice",icon: <BsHospitalFill />},
+    {title: "Appointments", icon: <FaRegCalendarDays />},
     {title:"Referrals",spacing:true,icon:<MdSwapHoriz size={30}/>},
     {title:"Documents",icon:<BsReverseLayoutTextSidebarReverse/>,
      submenu:true,
@@ -72,6 +72,7 @@ function Header (){
          
         </section>
       </section>
+      {/**
       <div className="thisfill">
               <div className="firsticon">
                 <input type="checkbox" style={{ marginBottom:'5px', marginLeft:'15px' ,marginTop: '8px'}}>
@@ -80,6 +81,8 @@ function Header (){
                 </div><div className="secondicon"></div><div className="thirdicon">
               </div><div className="fourthicon"></div><div className="fifthicon"></div>
       </div>
+      */}
+      <section style={{ marginTop: '10px' }}></section>
       <section>
         <div className="flex">
         
@@ -90,7 +93,8 @@ function Header (){
         ${!open && "rotate-180"}`}
       onClick={handleNavbarToggle}
     />
-        
+        <br className="addingborder">
+        </br>
          <div className="inline-flex">
          {/* <RxHamburgerMenu  className={`bg-amber text-4xl rounded cursor-pointer float-left mr-2 duration-500 ${open && "rotate-[360deg]"}`}/> */}
 
@@ -139,54 +143,7 @@ function Header (){
           </div>
 <div className="tablealtering">
   
-{/* 
-<table style={{ borderCollapse: 'collapse', width: '100%', border: '1px solid black' }} className="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Email Address</th>
-      <th scope="col">Contact</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Select</th>
-      <th scope="col">Delete</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Additional Column 1</td>
-      <td>Additional Column 2</td>
-      <td><input type="checkbox" /></td>
-      <td>Additional Column 4</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>Additional Column 1</td>
-      <td>Additional Column 2</td>
-      <td><input type="checkbox" /></td>
-      <td>Additional Column 4</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td >Larry the Bird</td>
-      <td>Thornton</td>
-      <td>@twitter</td>
-      <td>Additional Column 1</td>
-      <td>Additional Column 2</td>
-      <td><input type="checkbox" /></td>
-      <td>Additional Column 4</td>
-    </tr>
-  </tbody>
-</table>
-*/}
+
 </div>
         </div>
        

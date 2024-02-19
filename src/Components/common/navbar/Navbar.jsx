@@ -14,8 +14,9 @@ function Navbar() {
       
         <a href="/notifi" className="navbar-item">
         <FaBell className="fa-bell" /> {/* Apply the CSS class for FaBell icon */}
+        
       </a>
-
+      
       <a href="/singout" className="navbar-item">
         <FaSignOutAlt className="fa-sign-out-alt" /> {/* Apply the CSS class for FaSignOutAlt icon */}
         

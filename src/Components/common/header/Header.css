@@ -59,13 +59,7 @@
     margin-top: 6px;
   }
   
-  .header-bottom__email {
-    margin-right: 55px;
-  }
   
-  .header-bottom__phone {
-    margin-right: 65px;
-  }
   
   .header-bottom__bag {
     position: absolute;
@@ -173,3 +167,4 @@ background-color:darkkhaki;
 tr, td {
   border: 1px solid black;
 }
+

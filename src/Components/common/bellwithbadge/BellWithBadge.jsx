@@ -1,15 +1,12 @@
-{/*import React from 'react';
-import { FaBell } from 'react-icons/fa';
+import React from 'react';
 import './BellWithBadge.css'; // Create a CSS file for styling
 
-const BellWithBadge = ({ notificationCount }) => {
+function BellWithBadge() {
   return (
-    <a href="/notifi" className="navbar-item">
-      <FaBell className="fa-bell" />
-      {notificationCount > 0 && <div className="badge-dot" />}
-    </a>
+    <h1>hello world</h1>
   );
-};
+}
 
 export default BellWithBadge;
-*/}
+
+
