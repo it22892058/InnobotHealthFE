@@ -5,7 +5,26 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "dark-purple": "#02072D",
+        'light-white':'rgba(255,255,255,0.4)',
+        "amber":"#03989e",
+       
+        
+      },
+      width:{
+        '20':'7rem'
+      },
+      padding: {
+        '5': '2.5rem',
+        '8': '2rem',
+      },
+      borderRadius: {
+        'right': '0 1.95rem 2.95rem 0' // Border-radius for right corners
+      },
+      
+    },
   },
   plugins: [],
 }
