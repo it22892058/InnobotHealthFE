@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import logo from './logo.png'
 
-import './Header.css';
+import './Sidebar.css';
 import { FaInbox } from "react-icons/fa";
 import { MdSwapHoriz } from 'react-icons/md';
 import { BsArrowLeftShort, BsSearch,BsReverseLayoutTextSidebarReverse} from 'react-icons/bs';
@@ -15,7 +15,7 @@ import { FaMoneyBillTransfer,FaRegCalendarDays } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
 import { FaChartBar } from 'react-icons/fa';
 console.log(logo);
-function Header (){
+function Sidebar(){
   const[open,setOpen]= useState(false);
   const[submenuOpen,setSubmenuOpen]= useState(false);
 
@@ -51,7 +51,7 @@ function Header (){
     
   ];
     return(
-      <div>
+        <section className="header">
           
       {/**
       <div className="thisfill">
@@ -64,7 +64,7 @@ function Header (){
       </div>
       */}
       <section style={{ marginTop: '10px' }}></section>
-      
+      <section>
         <div className="flex">
         
           <div className={`bg-dark-purple h-screen p-5 pt-8 ${open ? "w-100" : "w-20"} duration-300 relative rounded-right`}>
@@ -128,17 +128,17 @@ function Header (){
 </div>
         </div>
        
-       
+        </section>
 
 
 
 
         
-    </div>
+        </section>
         
         
        
     )
 }
 
-export default Header;
+export default Sidebar;

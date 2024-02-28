@@ -36,6 +36,7 @@ const router = createBrowserRouter([
     path: '/appointments',
     element: <div><Appointments/> </div>
   },
+  
 
  
 

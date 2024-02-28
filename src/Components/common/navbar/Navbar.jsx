@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <section className="navbar">
        
-      <a href="/" className="navbar-item">
+      <a href="/dashboard" className="navbar-item">
         <FaHome className="fa-bell"  /></a>
      
       
