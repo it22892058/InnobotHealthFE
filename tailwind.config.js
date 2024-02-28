@@ -10,11 +10,13 @@ export default {
         "dark-purple": "#02072D",
         'light-white':'rgba(255,255,255,0.4)',
         "amber":"#03989e",
+        'blue-violet': '#8A2BE2',
        
-        
+      
       },
       width:{
-        '20':'7rem'
+        '20':'7rem',
+        '4/5': '48.5%', 
       },
       padding: {
         '5': '2.5rem',

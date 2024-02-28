@@ -5,7 +5,7 @@ import Verify from './Components/Verify/Verify'
 import Password  from './Components/Password/Password'
 import Dashboard from './Components/common/common'
 import Appointments from './Components/Appointments/Appointments'
-
+import  Schedule  from  './Components/Schedule/Schedule'
 import {
   createBrowserRouter,
   RouterProvider
@@ -36,7 +36,10 @@ const router = createBrowserRouter([
     path: '/appointments',
     element: <div><Appointments/> </div>
   },
-  
+  {
+    path: '/schedule',
+    element: <div><Schedule/> </div>
+  },
 
  
 
