@@ -6,6 +6,7 @@ import Password  from './Components/Password/Password'
 import Dashboard from './Components/common/common'
 import Appointments from './Components/Appointments/Appointments'
 import  Schedule  from  './Components/Schedule/Schedule'
+import Scheduleinsurance from './Components/Scheduleinsurance/Scheduleinsurance'
 import {
   createBrowserRouter,
   RouterProvider
@@ -40,8 +41,12 @@ const router = createBrowserRouter([
     path: '/schedule',
     element: <div><Schedule/> </div>
   },
+  {
+    path: '/scheduleinsurance',
+    element: <div><Scheduleinsurance/> </div>
+  },
 
- 
+  
 
 ])
 
