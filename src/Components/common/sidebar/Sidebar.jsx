@@ -63,7 +63,7 @@ function Sidebar(){
               </div><div className="fourthicon"></div><div className="fifthicon"></div>
       </div>
       */}
-      <section style={{ marginTop: '10px' }}></section>
+      
       <section>
         <div className="flex">
         

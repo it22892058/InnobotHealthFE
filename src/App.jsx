@@ -7,6 +7,7 @@ import Dashboard from './Components/common/common'
 import Appointments from './Components/Appointments/Appointments'
 import  Schedule  from  './Components/Schedule/Schedule'
 import Scheduleinsurance from './Components/Scheduleinsurance/Scheduleinsurance'
+import UpdateAppointment from './Components/UpdateAppointment/UpdateAppointment'
 import {
   createBrowserRouter,
   RouterProvider
@@ -45,7 +46,10 @@ const router = createBrowserRouter([
     path: '/scheduleinsurance',
     element: <div><Scheduleinsurance/> </div>
   },
-
+  {
+    path: '/updateapp',
+    element: <div><UpdateAppointment/> </div>
+  },
   
 
 ])

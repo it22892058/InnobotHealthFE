@@ -14,6 +14,7 @@ import { BsChevronRight } from "react-icons/bs";
 import { FaMoneyBillTransfer,FaRegCalendarDays } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
 import { FaChartBar } from 'react-icons/fa';
+import Topbar from '../topbar/Topbar';
 console.log(logo);
 function Header (){
   const[open,setOpen]= useState(false);
@@ -63,7 +64,9 @@ function Header (){
               </div><div className="fourthicon"></div><div className="fifthicon"></div>
       </div>
       */}
-      <section style={{ marginTop: '10px' }}></section>
+      <Topbar/>
+
+      
       
         <div className="flex">
         
@@ -129,7 +132,6 @@ function Header (){
         </div>
        
        
-
 
 
 
