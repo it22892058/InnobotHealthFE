@@ -5,6 +5,9 @@ import Verify from './Components/Verify/Verify'
 import Password  from './Components/Password/Password'
 import Dashboard from './Components/common/common'
 import Appointments from './Components/Appointments/Appointments'
+import ClaimForm from './Components/ClaimManage/ClaimForm'
+import UpdateForm from './Components/UpdateClaim/UpdateForm'
+import OverviewClaim from './Components/ClaimOverview/OverviewClaim'
 
 import {
   createBrowserRouter,
@@ -36,8 +39,18 @@ const router = createBrowserRouter([
     path: '/appointments',
     element: <div><Appointments/> </div>
   },
-
- 
+  {
+    path: '/ClaimManage',
+    element: <div><ClaimForm /> </div>
+  },
+  {
+    path: '/UpdateClaim',
+    element: <div><UpdateForm /> </div>
+  },
+  {
+    path: '/ClaimOverview',
+    element: <div><OverviewClaim /> </div>
+  }
 
 ])
 
