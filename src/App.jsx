@@ -8,6 +8,10 @@ import Appointments from './Components/Appointments/Appointments'
 import  Schedule  from  './Components/Schedule/Schedule'
 import Scheduleinsurance from './Components/Scheduleinsurance/Scheduleinsurance'
 import UpdateAppointment from './Components/UpdateAppointment/UpdateAppointment'
+import ClaimForm from './Components/ClaimManage/ClaimForm'
+import UpdateForm from './Components/UpdateClaim/UpdateForm'
+import OverviewClaim from './Components/ClaimOverview/OverviewClaim'
+
 import {
   createBrowserRouter,
   RouterProvider
@@ -50,7 +54,19 @@ const router = createBrowserRouter([
     path: '/updateapp',
     element: <div><UpdateAppointment/> </div>
   },
-  
+
+  {
+    path: '/ClaimManage',
+    element: <div><ClaimForm /> </div>
+  },
+  {
+    path: '/UpdateClaim',
+    element: <div><UpdateForm /> </div>
+  },
+  {
+    path: '/ClaimOverview',
+    element: <div><OverviewClaim /> </div>
+  }
 
 ])
 
